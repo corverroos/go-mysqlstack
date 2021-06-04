@@ -54,19 +54,25 @@ func (s *Statement) ComStatementExecute(parameters []sqltypes.Value) error {
 	return nil
 }
 
-// ComStatementExecute -- statement execute write.
-func (s *Statement) ComStatementQuery(parameters []sqltypes.Value) (*sqltypes.Result, error) {
+// ComStatementQueryRows -- statement query read only.
+func (s *Statement) ComStatementQueryRows(parameters []sqltypes.Value) (Rows, error) {
 	var err error
 	var datas []byte
-	var iRows Rows
-	var qrRow []sqltypes.Value
-	var qrRows [][]sqltypes.Value
 
 	if datas, err = proto.PackStatementExecute(s.ID, parameters); err != nil {
 		return nil, err
 	}
 
-	if iRows, err = s.conn.stmtQuery(sqldb.COM_STMT_EXECUTE, datas); err != nil {
+	return s.conn.stmtQuery(sqldb.COM_STMT_EXECUTE, datas)
+}
+// ComStatementExecute -- statement execute write.
+func (s *Statement) ComStatementQuery(parameters []sqltypes.Value) (*sqltypes.Result, error) {
+	var err error
+	var iRows Rows
+	var qrRow []sqltypes.Value
+	var qrRows [][]sqltypes.Value
+
+	if iRows, err = s.ComStatementQueryRows(parameters); err != nil {
 		return nil, err
 	}
 	for iRows.Next() {
