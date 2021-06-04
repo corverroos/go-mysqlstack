@@ -20,7 +20,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/xelabs/go-mysqlstack/sqlparser/depends/sqltypes"
+	"github.com/corverroos/go-mysqlstack/sqlparser/depends/sqltypes"
 )
 
 func TestEncodable(t *testing.T) {

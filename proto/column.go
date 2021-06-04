@@ -10,11 +10,11 @@
 package proto
 
 import (
-	"github.com/xelabs/go-mysqlstack/sqldb"
+	"github.com/corverroos/go-mysqlstack/sqldb"
 
-	"github.com/xelabs/go-mysqlstack/sqlparser/depends/common"
-	querypb "github.com/xelabs/go-mysqlstack/sqlparser/depends/query"
-	"github.com/xelabs/go-mysqlstack/sqlparser/depends/sqltypes"
+	"github.com/corverroos/go-mysqlstack/sqlparser/depends/common"
+	querypb "github.com/corverroos/go-mysqlstack/sqlparser/depends/query"
+	"github.com/corverroos/go-mysqlstack/sqlparser/depends/sqltypes"
 )
 
 // ColumnCount returns the column count.

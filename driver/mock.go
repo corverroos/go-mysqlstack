@@ -18,11 +18,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/xelabs/go-mysqlstack/sqldb"
-	"github.com/xelabs/go-mysqlstack/xlog"
+	"github.com/corverroos/go-mysqlstack/sqldb"
+	"github.com/corverroos/go-mysqlstack/xlog"
 
-	querypb "github.com/xelabs/go-mysqlstack/sqlparser/depends/query"
-	"github.com/xelabs/go-mysqlstack/sqlparser/depends/sqltypes"
+	querypb "github.com/corverroos/go-mysqlstack/sqlparser/depends/query"
+	"github.com/corverroos/go-mysqlstack/sqlparser/depends/sqltypes"
 )
 
 func randomPort(min int, max int) int {

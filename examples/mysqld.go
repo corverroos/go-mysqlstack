@@ -14,10 +14,10 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/xelabs/go-mysqlstack/driver"
-	querypb "github.com/xelabs/go-mysqlstack/sqlparser/depends/query"
-	"github.com/xelabs/go-mysqlstack/sqlparser/depends/sqltypes"
-	"github.com/xelabs/go-mysqlstack/xlog"
+	"github.com/corverroos/go-mysqlstack/driver"
+	querypb "github.com/corverroos/go-mysqlstack/sqlparser/depends/query"
+	"github.com/corverroos/go-mysqlstack/sqlparser/depends/sqltypes"
+	"github.com/corverroos/go-mysqlstack/xlog"
 )
 
 func main() {

@@ -13,12 +13,12 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/xelabs/go-mysqlstack/proto"
-	"github.com/xelabs/go-mysqlstack/sqldb"
+	"github.com/corverroos/go-mysqlstack/proto"
+	"github.com/corverroos/go-mysqlstack/sqldb"
 
-	"github.com/xelabs/go-mysqlstack/sqlparser/depends/common"
-	querypb "github.com/xelabs/go-mysqlstack/sqlparser/depends/query"
-	"github.com/xelabs/go-mysqlstack/sqlparser/depends/sqltypes"
+	"github.com/corverroos/go-mysqlstack/sqlparser/depends/common"
+	querypb "github.com/corverroos/go-mysqlstack/sqlparser/depends/query"
+	"github.com/corverroos/go-mysqlstack/sqlparser/depends/sqltypes"
 )
 
 const (

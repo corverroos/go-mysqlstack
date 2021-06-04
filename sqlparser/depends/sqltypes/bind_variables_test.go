@@ -23,7 +23,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	querypb "github.com/xelabs/go-mysqlstack/sqlparser/depends/query"
+	querypb "github.com/corverroos/go-mysqlstack/sqlparser/depends/query"
 )
 
 func TestProtoConversions(t *testing.T) {

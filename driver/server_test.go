@@ -14,11 +14,11 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/xelabs/go-mysqlstack/sqldb"
-	"github.com/xelabs/go-mysqlstack/xlog"
+	"github.com/corverroos/go-mysqlstack/sqldb"
+	"github.com/corverroos/go-mysqlstack/xlog"
 
-	querypb "github.com/xelabs/go-mysqlstack/sqlparser/depends/query"
-	"github.com/xelabs/go-mysqlstack/sqlparser/depends/sqltypes"
+	querypb "github.com/corverroos/go-mysqlstack/sqlparser/depends/query"
+	"github.com/corverroos/go-mysqlstack/sqlparser/depends/sqltypes"
 )
 
 func TestServer(t *testing.T) {

@@ -13,9 +13,9 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/xelabs/go-mysqlstack/sqldb"
+	"github.com/corverroos/go-mysqlstack/sqldb"
 
-	"github.com/xelabs/go-mysqlstack/sqlparser/depends/common"
+	"github.com/corverroos/go-mysqlstack/sqlparser/depends/common"
 )
 
 func TestERR(t *testing.T) {

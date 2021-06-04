@@ -1,4 +1,6 @@
-module github.com/xelabs/go-mysqlstack
+module github.com/corverroos/go-mysqlstack
+
+go 1.16
 
 require (
 	github.com/shopspring/decimal v1.2.0
